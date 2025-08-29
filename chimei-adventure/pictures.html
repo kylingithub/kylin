@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>奇美博物館大冒險 · 圖像線索</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/picture.css">
+</head>
+<body>
+  <header class="ghibli-header header">
+    <div class="container">
+      <a class="brand" href="./">
+        <span class="material-icons mr-8" aria-hidden="true">photo_library</span>
+        <span>圖像線索</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-ghibli text-center">
+      <div class="container">
+        <h1 class="hero-title">圖像線索</h1>
+        <p class="hero-subtitle">點擊卡片翻轉，查看圖片提示。</p>
+        <div class="mt-3">
+          <a href="./" class="btn btn-leaf">回到大冒險</a>
+        </div>
+      </div>
+      <div class="wave-separator" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64 C240,128 480,0 720,32 C960,64 1200,128 1440,80 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="intro">
+        <div class="d-flex align-items-center mb-4">
+          <span class="material-icons text-leaf mr-8" aria-hidden="true">lightbulb</span>
+          <h2 class="section-title m-0">翻牌找線索</h2>
+        </div>
+        <p>點擊卡片正面的文字，即可翻轉看到對應的圖片提示；再次點擊可翻回文字。</p>
+      </section>
+
+      <section class="grid" id="cardGrid">
+        <!-- Cards will be rendered dynamically by js/picture.js -->
+        <noscript>需要啟用 JavaScript 以載入卡片。</noscript>
+      </section>
+    </div>
+  </main>
+
+  <footer class="ghibli-footer footer">
+    <div class="container">
+      <span>© <span id="year"></span> Kylin</span>
+      <nav class="links"><a href="./">回到大冒險</a></nav>
+    </div>
+  </footer>
+
+  <script src="./js/picture.js"></script>
+</body>
+</html>
+
