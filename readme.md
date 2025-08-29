@@ -1,24 +1,5 @@
-# HTML Boilerplate
-
-## Git setting
-download with zip and open in git bash
-```
-bash git_init.sh
-```
-
-clone from github
-```
-git clone url ProjectName
-<!-- rename  -->
-cd ./ProjectName
-
-```
-## two column layout
-<!-- TODO -->
-## three column layout
-<!-- TODO -->
-
-
+# Kylin
+This is a web page to introduce myself. Some little project will be presented here also.
 ## Environment
 
 ### Bootstrap v4.5.2
