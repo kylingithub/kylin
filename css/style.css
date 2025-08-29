@@ -27,7 +27,7 @@ main{
 }
 
 .ghibli body, .ghibli{
-  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Arial, sans-serif;
+  font-family: 'Noto Sans TC', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Arial, sans-serif;
   color: var(--ink);
 }
 
@@ -43,7 +43,7 @@ main{
   position: relative;
 }
 .hero-title{
-  font-family: 'Noto Serif JP', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Noto Sans TC', 'Noto Serif JP', Georgia, 'Times New Roman', Times, serif;
   color: var(--ink);
 }
 .hero-subtitle{ color: #4f5b62; }
@@ -72,7 +72,7 @@ main{
 .bg-cream{ background-color: var(--cream); }
 
 .section-title{
-  font-family: 'Noto Serif JP', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Noto Sans TC', 'Noto Serif JP', Georgia, 'Times New Roman', Times, serif;
   color: var(--ink);
   font-weight: 600;
 }
