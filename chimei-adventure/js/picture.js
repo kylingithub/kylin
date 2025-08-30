@@ -129,21 +129,34 @@
   function wireInteractions(){
     var grid = document.getElementById('cardGrid');
     if(!grid) return;
+    var currentExpanded = null;
+    function expand(card){
+      if (currentExpanded && currentExpanded !== card){ collapse(currentExpanded); }
+      card.classList.add('flipped');
+      card.classList.add('expanded');
+      document.documentElement.classList.add('modal-open');
+      document.body.classList.add('modal-open');
+      currentExpanded = card;
+      card.setAttribute('aria-pressed', 'true');
+    }
+    function collapse(card){
+      card.classList.remove('expanded');
+      card.classList.remove('flipped');
+      document.documentElement.classList.remove('modal-open');
+      document.body.classList.remove('modal-open');
+      if (currentExpanded === card) currentExpanded = null;
+      card.setAttribute('aria-pressed', 'false');
+    }
     grid.addEventListener('click', function(e){
       var card = e.target.closest('.flip-card');
       if (!card) return;
-      card.classList.toggle('flipped');
-      card.setAttribute('aria-pressed', card.classList.contains('flipped') ? 'true' : 'false');
+      if (card.classList.contains('expanded')){ collapse(card); } else { expand(card); }
     });
 
-    Array.prototype.forEach.call(document.querySelectorAll('.flip-card'), function(card){
-      card.addEventListener('keydown', function(ev){
-        if(ev.key === 'Enter' || ev.key === ' '){
-          ev.preventDefault();
-          card.classList.toggle('flipped');
-          card.setAttribute('aria-pressed', card.classList.contains('flipped') ? 'true' : 'false');
-        }
-      });
+    document.addEventListener('keydown', function(ev){
+      if(ev.key === 'Escape' && currentExpanded){
+        collapse(currentExpanded);
+      }
     });
   }
 
