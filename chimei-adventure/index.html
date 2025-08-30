@@ -8,15 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="./css/adventure.css">
+  <link rel="stylesheet" href="./css/theme.css">
 </head>
 <body class="ghibli museum">
   <header class="header">
-    <div class="container">
-      <a class="brand" href="../">
+    <div class="container" style="display: flex; justify-content: space-between;">
+      
+      <a class="brand" href="./">
         <span class="material-icons mr-8" aria-hidden="true">museum</span>
         <span>奇美博物館大冒險</span>
+      </a>
+      <a class="brand" href="./pictures.html">
+        <span class="material-icons mr-8" aria-hidden="true">photo_library</span>
+        <span>圖像線索</span>
+      </a>
+      <a class="brand" href="./puzzles.html">
+        <!-- <span class="material-icons mr-8" aria-hidden="true">crossword</span> -->
+        <span class="material-symbols-outlined">crossword</span>
+        <span>謎題</span>
       </a>
     </div>
   </header>
@@ -54,7 +65,9 @@
 
         <details class="hint">
           <summary>Hint</summary>
-          Look to classic church features. Think of glass and flowers.
+          <div class="note">🐭 🐮 🐯 🐰 🐲 🐍 🐴 🐑 🐒 🐔 🐶 🐷</div>
+          <div class="note">♈ ♉ ♊ ♋ ♌ ♍ ♎ ♏ ♐ ♑ ♒ ♓</div>
+
         </details>
       </form>
     </section>
@@ -63,6 +76,7 @@
       <div class="result-head">
         <span class="material-icons text-gild" aria-hidden="true">emoji_objects</span>
         <span class="label-serif">線索 I</span>
+        
       </div>
       <div class="word" id="treasureWord1">—</div>
       <div class="note" id="treasureNote1">—</div>
@@ -88,7 +102,8 @@
 
   <footer class="footer">
     <div class="container">
-      <span>© <span id="year"></span> Kylin</span>
+      <a href="../"><span>© <span id="year"></span> Kylin</span></a>
+      
       <span class="muted">Ghibli × Classic Museum</span>
     </div>
   </footer>
