@@ -3,26 +3,75 @@
   // Each entry maps to one flip-card element
   var PICTURE_CARDS = [
     {
-      badge: '提示 1',
-      title: '「花與光」',
-      description: '在哪裡，花朵與彩光會相遇？',
-      imageUrl: 'https://images.unsplash.com/photo-1541690211439-9fb9f05fefe5?q=80&w=1200&auto=format&fit=crop',
-      imageAlt: '玫瑰窗'
+      badge: '1F',
+      title: '圖片題1-1',
+      description: '作品：『聖女貞德寓意』站在貞德背後的女子象徵著什麼？',
+      imageUrl: './assets/1-1.png',
+      imageAlt: '作品：聖女貞德寓意'
     },
     {
-      badge: '提示 2',
-      title: '「天使引路」',
-      description: '誰的手勢指向下一步？',
-      imageUrl: 'https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop',
-      imageAlt: '雕像'
+      badge: '1F',
+      title: '圖片題1-2',
+      description: '找出此動物的棲地',
+      imageUrl: './assets/1-2.png',
+      imageAlt: '弓角羚'
     },
     {
-      badge: '提示 3',
-      title: '「回聲之門」',
-      description: '在回聲最清晰的拱下。',
-      imageUrl: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1200&auto=format&fit=crop',
-      imageAlt: '長廊'
-    }
+      badge: '1F',
+      title: '圖片題1-7',
+      description: '此武器是來自哪個國家？',
+      imageUrl: './assets/1-7.png',
+      imageAlt: '燧石槍'
+    },
+    {
+      badge: '1F',
+      title: '圖片題1-8',
+      description: '猜猜我是誰？',
+      imageUrl: './assets/1-8.png',
+      imageAlt: 'buffalo'
+    },
+    {
+        badge: '1F',
+        title: '圖片題1-9',
+        description: '此人物屬於哪一個民族？',
+        imageUrl: './assets/1-9.png',
+        imageAlt: '蒙古馬弓'
+      },
+      {
+        badge: '1F',
+        title: '圖片題1-11',
+        description: '這個展品的名稱叫什麼？',
+        imageUrl: './assets/1-11.png',
+        imageAlt: 'Katar'
+      },
+      {
+        badge: '1F',
+        title: '圖片題1-12',
+        description: '這是哪一部文學作品的角色？',
+        imageUrl: './assets/1-12.png',
+        imageAlt: '柯賽特'
+      },
+      {
+        badge: '1F',
+        title: '圖片題1-13',
+        description: '此作品的底座印製的文字是什麼？',
+        imageUrl: './assets/1-13.png',
+        imageAlt: '有志者事竟成'
+      },
+      {
+        badge: '2F',
+        title: '圖片題2-1',
+        description: '此物種的學名是什麼？______minor',
+        imageUrl: './assets/2-1.png',
+        imageAlt: '天堂鳥'
+      },
+      {
+        badge: '2F',
+        title: '圖片題2-9',
+        description: '這個樂器的名稱是？',
+        imageUrl: './assets/2-9.png',
+        imageAlt: '蛇型號'
+      },
   ];
 
   function createCard(card){
