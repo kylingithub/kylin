@@ -2,14 +2,14 @@
   // Client-side reveal without storing real keys/answers in code.
   // Provide ciphertext blobs (salt, iv, cipherText) generated with the tool at tools/encrypt.html
   const encryptedClue1 ={
-    "salt": "L4TbIB6Tk6ShP6tKk0seBg==",
-    "iv": "V/jVdq4VWajL1unr",
-    "cipherText": "XbsVCuTXZ3Ju/wrUu1KNPGPNbpPjBdQOVYaXMPDMt6Z4YY2s88W3++p4jxDctMk703GzD0nkYB9Ek5Umt0fiDQDDN8Re3bK1Xuhaedvj5XOcImvwIV2uVhIfqu8="
+    "salt": "BHcs0bEot8daQwatFgeIow==",
+    "iv": "e6XPks2I0M5nRZk7",
+    "cipherText": "ZKALzbTNafwb1IGQUm0ZaWu3na6b9bXpmSZnGkhUQlvtGg0WZZJ9udWzIcWAwNvIhuF5uA7GWF7bQ5pQrdWuIcHpyElzCNHfFy1Csknb8qi0yrimmubpLlecuh0="
   };
   const encryptedClue2 = {
-    "salt": "fkBQd/+VmMS9NZGwDr0+Ag==",
-    "iv": "qBllfxQ4wVisv4kh",
-    "cipherText": "QjCBbvmKS/g7V1DUk3IArrmwEwuN9/RDWjJvasLvm66tGFnE+1bc5XbsoXf4i/IaSm4C3qNlaD4zYXpymc42jPaYsdLp9BZ9QhvpxWsHBWyfIOAU"
+    "salt": "MjiL1o83vxDzPlFUB/Grbw==",
+    "iv": "gVgf5Ymm7ikkYSpB",
+    "cipherText": "7V6EJgq7hT0zXrd4CoCFPQY0VgfnntCUS0g9EmJpODdD3bmBqxZqPYRfzlHhgB9ctb9vbx+uU86U0J0KxpgnUdIYnRGeVmrgq0pBW8nDGDQjOgrE"
   };
 
   const $ = (sel) => document.querySelector(sel);
