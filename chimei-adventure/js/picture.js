@@ -59,7 +59,7 @@
         imageAlt: '有志者事竟成'
       },
       {
-        badge: '2F',
+        badge: '1F',
         title: '圖片題2-1',
         description: '此物種的學名是什麼？______minor',
         imageUrl: './assets/2-1.png',
