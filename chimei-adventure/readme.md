@@ -108,4 +108,6 @@
 - 目前加密採用：PBKDF2（SHA‑256，120,000 次迭代）導出金鑰，並以 AES‑GCM（256-bit）加密；每次會產生隨機 `salt`（16 bytes）與 `iv`（12 bytes）。
 - 想更換密碼時，重新用工具產生新密文，覆蓋 `encryptedClue1/2` 即可。
 
-
+## Crossword Puzzle Maker
+1. [Puzzle1](https://crosswordlabs.com/edit/1-71064)
+2. [Puzzle2](https://crosswordlabs.com/edit/2-1505672)

@@ -68,8 +68,8 @@
       res1.classList.remove('show');
       res2.classList.remove('show');
 
-      const a = $('#key1').value || '';
-      const b = $('#key2').value || '';
+      const a = ($('#key1').value || '').toLowerCase().trim();
+      const b = ($('#key2').value || '').toLowerCase().trim();
 
       let okCount = 0;
       try{
