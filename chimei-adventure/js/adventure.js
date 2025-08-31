@@ -2,9 +2,9 @@
   // Client-side reveal without storing real keys/answers in code.
   // Provide ciphertext blobs (salt, iv, cipherText) generated with the tool at tools/encrypt.html
   const encryptedClue1 ={
-    "salt": "owAl+h1Zr5DV7iYo0zrreg==",
-    "iv": "Ph93ef8hIcUaylg4",
-    "cipherText": "Brdh6Bzzyuo0mVqyXkt8/R197cnHp6NG/7Fup50fDKlwvOubSGi+u8Aa4zpFMVPD8qV/sNUAdoQpDnTlTJH06mLQ5XIZ45IfqRulM/XhcTS6cae0nPPRcpnGRKA="
+    "salt": "L4TbIB6Tk6ShP6tKk0seBg==",
+    "iv": "V/jVdq4VWajL1unr",
+    "cipherText": "XbsVCuTXZ3Ju/wrUu1KNPGPNbpPjBdQOVYaXMPDMt6Z4YY2s88W3++p4jxDctMk703GzD0nkYB9Ek5Umt0fiDQDDN8Re3bK1Xuhaedvj5XOcImvwIV2uVhIfqu8="
   };
   const encryptedClue2 = {
     "salt": "3R5KM1OU+Bas5xSOI4Mi2A==",
@@ -68,8 +68,8 @@
       res1.classList.remove('show');
       res2.classList.remove('show');
 
-      const a = $('#key1').value || '';
-      const b = $('#key2').value || '';
+      const a = ($('#key1').value || '').toLowerCase().trim();
+      const b = ($('#key2').value || '').toLowerCase().trim();
 
       let okCount = 0;
       try{
